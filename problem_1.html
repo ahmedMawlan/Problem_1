@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem_1</title>
+    <style>
+      
+        input {
+          border-style: hidden;
+        }
+        
+    </style>
+</head>
+<body>
+
+  <p>Enter the first input : <input type="text" id="input_1"></p>
+  <p>Enter the socend input : <input type="text" id="input_2"></p>
+  <p>Enter the third input : <input type="text" id="input_3"></p>
+  <p><button onclick="fun()">Click</button></p>
+  <div id="div1"></div>
+  <div id="div2"></div> 
+
+  <script>
+    function fun(){
+    let n1 = parseInt(document.getElementById('input_1').value)
+    let n2 = parseInt(document.getElementById('input_2').value)
+    let n3 = parseInt(document.getElementById('input_3').value)
+    let result
+    if ((n1 >= 55 && n2 >= 55 && n3 >= 55)  && (n1 <= 99 && n2 <= 99 && n3 <= 99 )){
+      result = true
+      document.getElementById('div1').innerHTML = result
+    }else{
+      result = false
+      document.getElementById('div1').innerHTML = result
+    }
+  }
+  </script>
+
+
+</body>
